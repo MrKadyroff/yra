@@ -1,0 +1,22 @@
+{
+  "name": "megamaster",
+  "authors": [
+    "Sakhnovkrg <sakhnov-krg@ya.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "jquery.maskedinput": "^1.4.1"
+  }
+}
