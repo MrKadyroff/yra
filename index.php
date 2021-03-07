@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="ru">
+<?php 
+require_once 'endpoints/db.php';
+ ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -83,7 +86,7 @@
         </div><!-- .my-container -->
     </header><!-- .site-header -->
     <div id="btn_communicate">
-        <a class="comment-btn" href="#">
+        <a class="comment-btn show-contact-form" href="#">
             <img class="comment-btn__image" src="./img/comment-btn.svg" alt="comment"></a>
     </div>
  
@@ -840,6 +843,9 @@
                 <a href="#" class="subscribe__link">
                         Подписаться на рассылку
                     </a>
+                    
+
+
             </div>
 
         </div>
@@ -851,12 +857,15 @@
         <form method="post" class="contact-form__form">
             <a href="#" class="contact-form-close"></a>
             <h2 class="contact-form__heading">Связаться с нами</h2>
-            <div class="form-group">
+
+            <div class="form-group col-md-12 d-flex flex-row ">
+            <div class="form-group col-md-6">
                 <input required type="text" class="form-control" placeholder="Имя">
             </div>
-            <div class="form-group">
+            <div class="form-group  col-md-6">
                 <input required type="text" class="form-control" placeholder="Фамилия">
             </div>
+        </div>
             <div class="form-group">
                 <input required type="email" class="form-control" placeholder="E-mail">
             </div>

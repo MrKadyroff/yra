@@ -42,26 +42,63 @@ if(!isset($_SESSION['admin'])){
           ADMIN
         </a>
       </div>
-      <div class="sidebar-wrapper" id="sidebar-wrapper">
+     <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li >
-            <a href="./index.php">
+          <li>
+            <a >
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
-          <li class="active ">
-            <a >
+          <li>
+            <a href="./news_ru.php">
               <i class="now-ui-icons education_atom"></i>
-              <p>News</p>
+              <p>ALL NEWS</p>
             </a>
           </li>
            <li>
-            <a href="./new_product.php">
+            <a href="./add_news.php">
               <i class="now-ui-icons education_atom"></i>
-              <p>Add Product</p>
+              <p>ADD NEWS</p>
             </a>
           </li>
+            <li>
+            <a href="./members_ru.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>ALL MEMBERs</p>
+            </a>
+          </li>
+          <li>
+            <a href="./add_member.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>ADD MEMBER</p>
+            </a>
+          </li>
+           <li>
+            <a href="./add_project.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>ADD PROJECT</p>
+            </a>
+          </li>
+           <li>
+            <a href="./projects_ru.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>PROJECTS</p>
+            </a>
+          </li>
+           <li class="active">
+            <a href="./smi_ru.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>SMI</p>
+            </a>
+          </li>
+           <li>
+            <a href="./add_smi.php">
+              <i class="now-ui-icons education_atom"></i>
+              <p>ADD SMI</p>
+            </a>
+          </li>
+
 
             <li>
             <a href="./users.php">
@@ -69,18 +106,15 @@ if(!isset($_SESSION['admin'])){
               <p>Users</p>
             </a>
           </li>
-            <li>
-            <a href="./payments.php">
-              <i class="now-ui-icons education_atom"></i>
-              <p>Payments</p>
-            </a>
-          </li>
-         <li >
+
+          
+           <li >
             <a href="logout.php">
               <i class="now-ui-icons education_atom"></i>
               <p>Logout</p>
             </a>
           </li>
+        
           
         </ul>
       </div>

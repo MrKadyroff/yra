@@ -1440,6 +1440,7 @@ a.mobile-menu__link {
     z-index: 50002;
     margin-top: 70px;
     padding: 15px;
+    width: 60vw;
 }
 
 .contact-form__form {

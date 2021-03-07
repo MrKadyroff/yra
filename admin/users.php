@@ -39,9 +39,9 @@ if(!isset($_SESSION['admin'])){
           ADMIN
         </a>
       </div>
-    <div class="sidebar-wrapper" id="sidebar-wrapper">
+   <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li class=" ">
+          <li>
             <a >
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
@@ -99,7 +99,7 @@ if(!isset($_SESSION['admin'])){
 
             <li class="active">
             <a href="./users.php">
-              <i class="now-ui-icons education_atom "></i>
+              <i class="now-ui-icons education_atom"></i>
               <p>Users</p>
             </a>
           </li>
