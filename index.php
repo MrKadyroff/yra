@@ -422,6 +422,7 @@
                                                     <div class="team-column-default-info__name">Фамилия и имя</div>
                                                     <div class="team-column-default-info__position">Должность</div>
                                                 </div>
+                                                
                                             </div><!-- .team-column__item -->
                                         </div><!-- .team-column -->
                                         <div class="team-column swiper-slide">
