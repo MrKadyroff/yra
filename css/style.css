@@ -16,7 +16,37 @@ textarea {
     flex: 1;
 
 }
+.inline_cont {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 1em;
+}
 
+.inline_cont div {
+  width: 10em;
+  height: 2em;
+}
+
+#link_element{
+    margin-top:15px; 
+    
+}
+
+#lang_form {
+    margin-top: 3px;
+    border: none;
+    background: #fff;
+    margin-left: 5px;
+}
+
+
+#link_element span{
+    margin-top:20px;
+    color: rgba(56, 56, 56, 1);
+ 
+    
+}
 
 .my-container {
     margin: 0 auto;
@@ -58,7 +88,9 @@ textarea {
 }
 
 .site-nav.active {
-    background: #191919;
+   background: rgb(13 99 160 / 63%);
+
+
 }
 
 .site-nav.active .my-container {
