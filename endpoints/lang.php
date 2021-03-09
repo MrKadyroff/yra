@@ -1,8 +1,9 @@
 <?php 
 $word =[];
 
-if(empty($_SESSION['lang'])){
+if(empty($_SESSION['lang']) || empty($_SESSION['language'])){
 	$_SESSION['lang'] = 'Русский';
+	$_SESSION['language'] = 'ru';
 }
 
 
@@ -10,15 +11,15 @@ if (isset($_POST['select_lang'])){
 		
 	if ($_POST['select_lang'] == 'ru'){
 		$_SESSION['lang'] = 'Русский';
-		 $language = 'ru';
+		 $_SESSION['language'] = 'ru';
 	    }
 	else if ($_POST['select_lang'] == 'kz'){
 		$_SESSION['lang'] = 'Қазақша';
-		 $language = 'kz';
+		 $_SESSION['language'] = 'kz';
 		}
 	else if($_POST['select_lang'] == 'en'){
 		$_SESSION['lang'] = 'English';	
-		 $language = 'en';
+		 $_SESSION['language'] = 'en';
 		}	
 	}
 
