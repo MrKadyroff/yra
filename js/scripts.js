@@ -5,7 +5,7 @@
             var formNm = $('#' + formID);
             $.ajax({
                 type: 'POST',
-                url: '../endpoints/lang.php', // Обработчик формы отправки
+                url: './endpoints/lang.php', // Обработчик формы отправки
                 data: formNm.serialize(),
                 success: function (data) {
                     // Вывод текста результата отправки в текущей форме

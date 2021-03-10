@@ -33,13 +33,12 @@
             <ul class="mobile-menu">
                 <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#home"><?php echo $word['main']; ?></a></li>
                 <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#about"><?php echo $word['about']; ?></a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#news">Новости</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#team">Команда</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#projects">Проекты</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#smi">СМИ</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#faq">Популярные вопросы</a></li>
-                
-                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#faq">Частые вопросы</a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#news"><?php echo $word['news_header']; ?></a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#team"><?php echo $word['command']; ?></a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#projects"><?php echo $word['projects']; ?></a></li>
+                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#smi"><?php echo $word['smi']; ?></a></li>
+               
+                <li class="mobile-menu__item"><a class="mobile-menu__link page-scroll" href="#faq"><?php echo $word['faq']; ?></a></li>
             </ul>
             <ul class="socials-menu">
                 <li class="socials-menu__item"><a class="socials-menu__link" target="_blank" href="#"><img
@@ -62,7 +61,7 @@
                     <img src="./img/logo.png" alt="Young Researchers Alliance">
                 </a>
                 <div class="site-nav__menu">
-                    <a href="#" class="join-link show-contact-form">Вступить<br> в YRA</a>
+                    <a href="#" class="join-link show-contact-form"><?php echo $word['connect_yra']; ?></a>
 
                     <ul class="lang-switcher">
                         <li class="lang-switcher__menu">
@@ -75,13 +74,13 @@
                                     </form>
                                 </li>
                                 <li class="lang-switcher__item">
-                                    <form  method="POST" id="lang2">
+                                    <form  method="POST" id="lang">
                                        <input type="text" name="select_lang" value="en"  style="display:none;">
                                        <input type="submit" id="lang_form" value="English">
                                     </form>
                                 </li>
                                 <li class="lang-switcher__item">
-                                     <form  method="POST" id="lang3">
+                                     <form  method="POST" id="lang">
                                        <input type="text" name="select_lang" value="kz"  style="display:none;">
                                        <input type="submit" id="lang_form" value="Қазақша">
                                     </form>
@@ -96,10 +95,9 @@
         </nav><!-- .site-nav -->
         <header class="site-header">
             <div class="my-container">
-                <h1 class="home-h1">Young Researchers Alliance</h1>
+                <h1 class="home-h1"><?php   echo $word['yra_header']; ?></h1>
                 <div class="main-thesis">
-                    Диалоговая площадка для взаимодействия между молодыми учеными в&nbsp;Казахстане и&nbsp;за&nbsp;рубежом в&nbsp;целях<br/>
-                    содействия развитию научной активности и&nbsp;активизации их&nbsp;профессиональной деятельности
+                   <?php   echo $word['yra_text']; ?>
                 </div>
             </div><!-- .my-container -->
         </header><!-- .site-header -->
@@ -111,32 +109,10 @@
         <div class="screen screen-goals">
             <div class="my-container">
                 <div class="screen__body">
-                    <h2 id="about" class="screen-heading">Цели и миссия</h2>
+                    <h2 id="about" class="screen-heading"><?php   echo $word['goals_header']; ?></h2>
 
                     <div class="screen-goals__wrap">
-                        <ul class="goals-list">
-                            <li class="goals-list__item">Диалоговая площадка для молодых ученых;</li>
-                            <li class="goals-list__item">Обмен опытом для реализации потенциала ученых;</li>
-                            <li class="goals-list__item">Продвижение молодых ученых в&nbsp;проведении <span class="nobr">научно-исследовательских</span>
-                                работ;
-                            </li>
-                            <li class="goals-list__item">Нетворкинг&nbsp;&mdash; укрепление деловых связей;</li>
-                            <li class="goals-list__item">Сбор и&nbsp;распространение информации о&nbsp;проведении
-                                <span class="nobr">научно-исследовательских</span>
-                                конкурсов, стажировок и<br/>
-                                вакансий у&nbsp;работодателей;
-                            </li>
-                            <li class="goals-list__item">Обсуждение научных и&nbsp;социальных проблем молодых ученых;</li>
-                            <li class="goals-list__item">Консультация и&nbsp;проведение научных проектов, в&nbsp;том числе
-                                проектов, в&nbsp;которых принимают участие члены<br/>
-                                Объединения;
-                            </li>
-                            <li class="goals-list__item">Организация и&nbsp;проведение тренингов, семинаров и&nbsp;конференций
-                                в&nbsp;областях,
-                                представляющих интерес для<br/>
-                                членов Объединения с&nbsp;приглашением экспертов
-                            </li>
-                        </ul><!-- .goals-list -->
+                       <?php   echo $word['goals_list']; ?>
                         <div class="screen-goals-video">
                             <div class="screen-goals-video__wrap">
                                
@@ -157,8 +133,8 @@
             <div class="my-container">
                 <div class="screen__body">
                     <div class="inline_cont">
-                    <div><h2 id="news" class="screen-heading">Новости</h2></div>
-                    <div id="link_element"><a href="#"><span class="smi-item__more">Все новости <img class="smi-item__chevron"
+                    <div><h2 id="news" class="screen-heading"><?php   echo $word['news_header']; ?></h2></div>
+                    <div id="link_element"><a href="#"><span class="smi-item__more"><?php   echo $word['all_news']; ?> <img class="smi-item__chevron"
                                                                                     src="./img/chevron-right-gray.svg"
                                                                                     alt=">"></span></a></div>
                     
@@ -193,8 +169,8 @@
                                                 <p>'.$news_element['news_info'].'</p>
                                             </div>
                                         </div>
-                                        <a href="#" class="button news-item-expand-button">Подробнее</a>
-                                        <a href="#" class="button news-item-collapse-button">Скрыть</a>
+                                        <a href="#" class="button news-item-expand-button">'.$word['more'].'</a>
+                                        <a href="#" class="button news-item-collapse-button">'.$word['hide'].'</a>
                                     </div><!-- .news-body -->
                                 </div><!-- .news-item -->';
                                       }
@@ -213,14 +189,14 @@
         <div class="screen screen-team">
             <div class="my-container">
                 <div class="screen__body">
-                    <h2 id="team" class="screen-heading">Команда</h2>
+                    <h2 id="team" class="screen-heading"><?php   echo $word['command']; ?></h2>
 
                     <ul class="team-tabs">
-                        <li class="team-tabs__item active"><a class="team-tabs__link" href="#">Совет YRA</a></li>
-                        <li class="team-tabs__item"><a class="team-tabs__link" href="#">Консультативный совет</a></li>
-                        <li class="team-tabs__item"><a class="team-tabs__link" href="#">Координаторы YRA</a></li>
-                        <li class="team-tabs__item"><a class="team-tabs__link" href="#">Команда</a></li>
-                        <li class="team-tabs__item"><a class="team-tabs__link" href="#">Учредители</a></li>
+                        <li class="team-tabs__item active"><a class="team-tabs__link" href="#"><?php   echo $word['sovet']; ?></a></li>
+                        <li class="team-tabs__item"><a class="team-tabs__link" href="#"><?php   echo $word['cons_sovet']; ?></a></li>
+                        <li class="team-tabs__item"><a class="team-tabs__link" href="#"><?php   echo $word['coordinators']; ?></a></li>
+                        <li class="team-tabs__item"><a class="team-tabs__link" href="#"><?php   echo $word['command']; ?></a></li>
+                        <li class="team-tabs__item"><a class="team-tabs__link" href="#"><?php   echo $word['founders']; ?></a></li>
                     </ul>
 
                     <div class="team-tabs-content">
@@ -363,6 +339,7 @@
                                                     </div>
                                                 </div>
                                             </div><!-- .team-column__item -->
+
                                             <div class="team-column__item has-extended-info">
                                                 <img class="team-column__photo" src="./img/photo8.png" alt="photo">
                                                 <div class="team-column-default-info">
@@ -416,31 +393,62 @@
                                 <a href="#" class="slider-prev team-slider2-prev"></a>
                                 <div class="swiper-container team-slider2">
                                     <div class="swiper-wrapper">
-                                        <div class="team-column swiper-slide">
-                                            <div class="team-column__item">
+                                          <div class="team-column swiper-slide">
+                                            <div class="team-column__item has-extended-info">
                                                 <img class="team-column__photo" src="./img/photo1.png" alt="photo">
                                                 <div class="team-column-default-info">
                                                     <div class="team-column-default-info__name">Фамилия и имя</div>
                                                     <div class="team-column-default-info__position">Должность</div>
                                                 </div>
-
+                                                <div class="team-column-extended-info">
+                                                    <div class="team-column-extended-info__name">Бейбит Абдикенов</div>
+                                                    <div class="team-column-extended-info__position">Вице-председатель</div>
+                                                    <div class="team-column-extended-info__email">example@gmail.com</div>
+                                                    <div class="team-column-extended-info__text">Cursus platea viverra purus
+                                                        platea. Imperdiet sapien cursus arcu, ante diam enim amet. Aliquam,
+                                                        est nulla sed placerat ultricies augue ipsum augue a. Pretium massa
+                                                        hac sed tristique placerat. Porttitor lectus sapien sit egestas amet
+                                                        viverra quis quam sed.
+                                                    </div>
+                                                </div>
                                             </div><!-- .team-column__item -->
                                         </div><!-- .team-column -->
-                                        <div class="team-column swiper-slide">
-                                            <div class="team-column__item">
-                                                <img class="team-column__photo" src="./img/photo3.png" alt="photo">
+                                         <div class="team-column swiper-slide">
+                                            <div class="team-column__item has-extended-info">
+                                                <img class="team-column__photo" src="./img/photo1.png" alt="photo">
                                                 <div class="team-column-default-info">
                                                     <div class="team-column-default-info__name">Фамилия и имя</div>
                                                     <div class="team-column-default-info__position">Должность</div>
                                                 </div>
+                                                <div class="team-column-extended-info">
+                                                    <div class="team-column-extended-info__name">Бейбит Абдикенов</div>
+                                                    <div class="team-column-extended-info__position">Вице-председатель</div>
+                                                    <div class="team-column-extended-info__email">example@gmail.com</div>
+                                                    <div class="team-column-extended-info__text">Cursus platea viverra purus
+                                                        platea. Imperdiet sapien cursus arcu, ante diam enim amet. Aliquam,
+                                                        est nulla sed placerat ultricies augue ipsum augue a. Pretium massa
+                                                        hac sed tristique placerat. Porttitor lectus sapien sit egestas amet
+                                                        viverra quis quam sed.
+                                                    </div>
+                                                </div>
                                             </div><!-- .team-column__item -->
-                                        </div><!-- .team-column -->
-                                        <div class="team-column swiper-slide">
-                                            <div class="team-column__item">
-                                                <img class="team-column__photo" src="./img/photo5.png" alt="photo">
+                                        </div><!-- .team-column -->  <div class="team-column swiper-slide">
+                                            <div class="team-column__item has-extended-info">
+                                                <img class="team-column__photo" src="./img/photo1.png" alt="photo">
                                                 <div class="team-column-default-info">
                                                     <div class="team-column-default-info__name">Фамилия и имя</div>
                                                     <div class="team-column-default-info__position">Должность</div>
+                                                </div>
+                                                <div class="team-column-extended-info">
+                                                    <div class="team-column-extended-info__name">Бейбит Абдикенов</div>
+                                                    <div class="team-column-extended-info__position">Вице-председатель</div>
+                                                    <div class="team-column-extended-info__email">example@gmail.com</div>
+                                                    <div class="team-column-extended-info__text">Cursus platea viverra purus
+                                                        platea. Imperdiet sapien cursus arcu, ante diam enim amet. Aliquam,
+                                                        est nulla sed placerat ultricies augue ipsum augue a. Pretium massa
+                                                        hac sed tristique placerat. Porttitor lectus sapien sit egestas amet
+                                                        viverra quis quam sed.
+                                                    </div>
                                                 </div>
                                             </div><!-- .team-column__item -->
                                         </div><!-- .team-column -->
@@ -463,7 +471,7 @@
         <div class="screen screen-projects">
             <div class="my-container">
                 <div class="screen__body">
-                     <h2 id="projects" class="screen-heading">Проекты</h2>
+                     <h2 id="projects" class="screen-heading"><?php   echo $word['projects']; ?></h2>
                 </div>
                     <div class="projects-slider-wrap">
                         <div class="project-slider swiper-container">
@@ -494,8 +502,8 @@
             <div class="my-container">
                 <div class="screen__body">
                     <div class="inline_cont">
-                    <h2 id="smi" class="screen-heading">СМИ</h2>
-                    <div id="link_element"><a href="#"><span class="smi-item__more">Все информации <img class="smi-item__chevron" src="./img/chevron-right-gray.svg" alt=">"></span></a></div></div>
+                    <h2 id="smi" class="screen-heading"><?php   echo $word['smi']; ?></h2>
+                    <div id="link_element"><a href="#"><span class="smi-item__more"><?php   echo $word['all_info']; ?> <img class="smi-item__chevron" src="./img/chevron-right-gray.svg" alt=">"></span></a></div></div>
                     <div class="smi-slider-wrap">
                         <a href="#" id="smi-next" class="slider-next smi-slider-next"></a>
                         <a href="#" id="smi-prev" class="slider-prev smi-slider-prev"></a>
@@ -521,7 +529,7 @@
                                 <div class="smi-item swiper-slide">
                                     <a class="smi-item__link" href="#">
                                         <img class="smi-item__image" src="./img/smi.png" alt="img">
-                                        <span class="smi-item__more">Подробнее <img class="smi-item__chevron"
+                                        <span class="smi-item__more"><?php   echo $word['more']; ?> <img class="smi-item__chevron"
                                                                                     src="./img/chevron-right.svg"
                                                                                     alt=">"></span>
                                     </a>
@@ -537,7 +545,7 @@
         <div class="screen screen-partners">
             <div class="my-container">
                 <div class="screen__body">
-                    <h2 id="partners" class="screen-heading">Партнеры</h2>
+                    <h2 id="partners" class="screen-heading"><?php   echo $word['partners']; ?></h2>
                     <div class="partners-slider-wrap">
                         <a href="#" id="partners-next" class="slider-next partners-slider-next"></a>
                         <a href="#" id="partners-prev" class="slider-prev partners-slider-prev"></a>
@@ -591,84 +599,46 @@
         <div class="screen screen-faq">
             <div class="my-container">
                 <div class="screen__body">
-                    <h2 id="faq" class="screen-heading">Частые вопросы</h2>
+                    <h2 id="faq" class="screen-heading"><?php   echo $word['faq']; ?></h2>
 
                     <div class="faq-row">
                         <div class="faq-col">
-                            <div class="faq-item">
+
+                            <?php 
+                                                                         
+                                    $faq =  "SELECT * FROM `faq` WHERE lang ='$language' LIMIT 5";
+                                    $res_faq =$con->query($faq);
+                                    while($faq_element=$res_faq->fetch_assoc()){
+                                        echo '<div class="faq-item">
                                 <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
+                                    '.$faq_element['quest_header'].'
                                 </a>
                                 <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
+                                  '.$faq_element['quets_content'].'
                                 </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
-                        </div>
+                            </div> ';
+                                    }
+                                        ?>
+</div>
+                      
                         <div class="faq-col">
-                            <div class="faq-item">
+                           
+                            
+                            <?php 
+                                                                         
+                                    $faq =  "SELECT * FROM `faq` WHERE lang ='$language' LIMIT 5";
+                                    $res_faq =$con->query($faq);
+                                    while($faq_element=$res_faq->fetch_assoc()){
+                                        echo '<div class="faq-item">
                                 <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
+                                    '.$faq_element['quest_header'].'
                                 </a>
                                 <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
+                                  '.$faq_element['quets_content'].'
                                 </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
-                            <div class="faq-item">
-                                <a href="#" class="faq-item__q">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </a>
-                                <div class="faq-item__a">
-                                    Blandit interdum vulputate magna venenatis leo maecenas sed mauris ornare. Blandit
-                                    interdum vulputate magna venenatis leo maecenas sed mauris ornare?
-                                </div>
-                            </div>
+                            </div> ';
+                                    }
+                                        ?>
                         </div>
                     </div>
                 </div><!-- .screen__body -->
@@ -685,7 +655,7 @@
                 </a>
             
                 <div class="footer-contacts footer-col">
-                    <h3 class="footer-heading">Контакты</h3>
+                    <h3 class="footer-heading"><?php   echo $word['contacts']; ?></h3>
                     <ul class="footer-contacts">
                         
                         <li class="footer-contacts__item">
@@ -697,7 +667,7 @@
                     </ul>
                 </div><!-- .footer-contacts -->
                 <div class="footer-socials footer-col">
-                    <h3 class="footer-heading">Мы в соц. сетях</h3>
+                    <h3 class="footer-heading"><?php   echo $word['in_soc']; ?></h3>
 
                     <ul class="socials-menu">
                         <li class="socials-menu__item"><a class="socials-menu__link" target="_blank" href="#"><img
@@ -726,7 +696,7 @@
                                     <input required type="text" class="form-control" placeholder="Фамилия">
                                 </div>
                                 <div class="form-group">
-                                    <button class="button button--block button--dark">Подписаться</button>
+                                    <button class="button button--block button--dark"><?php   echo $word['follow']; ?></button>
                                 </div>
                             </form>
                             <img src="./img/triangle.svg" class="triangle-with-shadow">
@@ -737,7 +707,7 @@
                  <div class="footer-contacts footer-col" id="subscribe_space">
                    
                     <a href="#" class="subscribe__link">
-                            Подписаться на рассылку
+                            <?php   echo $word['mailing']; ?>
                         </a>
                         
 
@@ -752,16 +722,15 @@
         <div class="contact-form__body">
             <form method="post" class="contact-form__form">
                 <a href="#" class="contact-form-close"></a>
-                <h2 class="contact-form__heading">Связаться с нами</h2>
+                <h2 class="contact-form__heading"><?php   echo $word['contact_us']; ?></h2>
 
-                <div class="form-group col-md-12 d-flex flex-row ">
-                <div class="form-group col-md-6">
+               
+                <div class="form-group ">
                     <input required type="text" class="form-control" placeholder="Имя">
                 </div>
-                <div class="form-group  col-md-6">
+                <div class="form-group  ">
                     <input required type="text" class="form-control" placeholder="Фамилия">
                 </div>
-            </div>
                 <div class="form-group">
                     <input required type="email" class="form-control" placeholder="E-mail">
                 </div>
@@ -772,7 +741,7 @@
                     <textarea type="text" class="form-control" placeholder="Комментарий" rows="5"></textarea>
                 </div>
                 <div class="form-group">
-                    <button class="button button--block button--dark">Отправить</button>
+                    <button class="button button--block button--dark"><?php   echo $word['submit']; ?></button>
                 </div>
             </form>
         </div><!-- .contact-form__body -->

@@ -1,4 +1,5 @@
 <?php 
+require_once 'db.php';
 $word =[];
 
 if(empty($_SESSION['lang']) || empty($_SESSION['language'])){

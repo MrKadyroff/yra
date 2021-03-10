@@ -1473,6 +1473,7 @@ a.mobile-menu__link {
     margin-top: 70px;
     padding: 15px;
     width: 60vw;
+
 }
 
 .contact-form__form {
@@ -1491,8 +1492,9 @@ a.contact-form-close {
     background: url(../img/close-mini.svg) center center no-repeat;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 0px;
 }
+
 
 
 
@@ -1506,7 +1508,10 @@ a.contact-form-close {
 }
 
     .contact-form__body {
-        margin: 0 auto;
+        margin-top: 10%;
+        width: 88vw;
+        top: 10%;
+        margin: auto;
         padding: 15px;
     }
 
